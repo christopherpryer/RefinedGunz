@@ -18,7 +18,7 @@ call cd build
 
 :: Generate the Visual Studio project files.
 
-call cmake -G "Visual Studio 14 2015" -T "v140_xp" -DMSSQL=1 ..\..
+call cmake -G "Visual Studio 15 2017" -T "v141_xp" -DMSSQL=1 ..\..
 
 if errorlevel 1 (
 	echo cmake generation failed, exiting
